@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="cover.css">
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dazy_Decor</div>
+            <ul class="one">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#products">Product</a></li>
+                <li> <a href="#contact-section">Contact</a></li>
+                <li> <a href="login.html">Log In</a></li>
+                <li><a href="#" class="search-icon">Cart</a></li>
+             </ul>
+        </nav>
+    </header>
+    <section class="two">
+        <div class="three">
+            <h1>Welcom to our customer</h1>
+        </div>
+    </section>
+  
+
+    <main>
+        <section id="products">
+          <h2>Our Products</h2>
+          <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <img src="anime.png" alt="Product 1">
+              <h3> product</h3>
+              <p>$29.99</p>
+              <button onclick="addToCart('Product Name 1')">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <img src="bad.png" alt="Product 2">
+              <h3>Product Name 2</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Product Name 2')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="bad.png" alt="Product 2">
+              <h3>Product Name 2</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Product Name 2')">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+          </div>
+        </section>
+      </main>
+
+
+      <div id="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Cell:</strong></p>
+            <p>+977 9742807095</p>
+            <p><strong>Email:</strong></p>
+            <p><a href="#">rojankc77@gmail.com</a></p>
+            <p><strong>Follow US:</strong></p>
+            <div class="social-media">
+                <a href="#" class="social-icon facebook">Facebook</a>
+                <a href="#" class="social-icon linkedin">LinkedIn</a>
+                <a href="#" class="social-icon twitter">Twitter</a>
+            </div>
+        </div>
+    
+        <div class="contact-form">
+            <h2>Quick Inquiry</h2>
+            <form action="#">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Write your Message *</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

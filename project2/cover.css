@@ -1,0 +1,303 @@
+/* General styles */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333 ;
+    background-image: url(shey.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+   
+
+/* header and navigation */
+header{
+    background-color: #1f98ef;
+    color: #333;
+    padding:20px 0;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*for home destitation*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li a{
+    color: #171616;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+nav ul li a:hover{
+    background-color: #005f7a;
+    border-radius: 5px;
+}
+
+/*hero section*/
+
+.two{
+    margin-top: 100px;
+    padding: 100px;
+    display: flex;
+    color: #0f0f0f;
+    text-align: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.two h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.two p{
+    font-size: 1.5em;
+
+}
+
+/*footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .two h1 {
+        font-size: 2.5em;
+    }
+
+    .two p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    .two h1 {
+        font-size: 2em;
+    }
+
+    .two p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+h1, h2, h3 {
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    color: #008cba;
+    border-bottom: 2px solid #008cba;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+
+h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#contact-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 30px;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h2 {
+    color: orangered;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #090909;
+}
+
+.contact-info p a {
+    color: #100f0f;
+    text-decoration: none;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #f47c3c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+.contact-form {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    color: orangered;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f47c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #e0692b;
+}
+
+#products{
+    margin: 15vh;
+    text-align: center;
+    /* padding: 10px ; */
+    height: 90vh;
+    justify-content: center;
+}
+
+.product-grid{
+    display: flex;
+    justify-content: space-around;
+    
+}
+section {
+    scroll-margin-top: 100px; /* Adjust based on your nav height */
+}
